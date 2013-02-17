@@ -1,0 +1,34 @@
+
+; The region HEAP is used to locate the bottom of the heap immediately above 
+; the ZI data ("+0"). The heap will grow up from this address.
+;
+; The region STACKS is used to locate the top of the memory used to store
+; the stacks for each mode. The stacks will grow down from this address.
+;
+; The region UART0 is used to map the position of the Integrator UART0 registers.
+;
+; Regions marked UNINIT will be left uninitialized, i.e. they will not be 
+; zero-initialized by the C library when it starts-up.
+
+ROM_LOAD 0x80004000
+{
+    code +0
+    {
+        init.o (Init, +First)
+        * (+RO, +RW,+ZI )
+    }
+
+
+
+    HEAP +0 UNINIT
+    {
+        heap.o (+ZI)
+    }
+    
+    STACKS +0x400000 UNINIT
+    {
+        stack.o (+ZI)
+    }
+
+
+}

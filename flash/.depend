@@ -1,0 +1,25 @@
+mmc_flash/mx53_mmc/src/board_evk.o: mmc_flash/mx53_mmc/src/board_evk.c \
+  mmc_flash/mx53_mmc/inc/mx53.h mmc_flash/mx53_mmc/inc/mx53_pins.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/iomux.h
+mmc_flash/mx53_mmc/src/flash_lib.o: mmc_flash/mx53_mmc/src/flash_lib.c \
+  ../global_inc/type.h ../global_inc/protocol.h ../global_inc/flash_lib.h \
+  mmc_flash/mx53_mmc/inc/mmc.h mmc_flash/mx53_mmc/inc/list.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/part.h
+mmc_flash/mx53_mmc/src/imx_esdhc.o: mmc_flash/mx53_mmc/src/imx_esdhc.c \
+  mmc_flash/mx53_mmc/inc/mmc.h mmc_flash/mx53_mmc/inc/list.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/part.h \
+  mmc_flash/mx53_mmc/inc/fsl_esdhc.h
+mmc_flash/mx53_mmc/src/iomux.o: mmc_flash/mx53_mmc/src/iomux.c \
+  mmc_flash/mx53_mmc/inc/mx53.h mmc_flash/mx53_mmc/inc/mx53_pins.h \
+  mmc_flash/mx53_mmc/inc/iomux.h ../global_inc/type.h
+mmc_flash/mx53_mmc/src/mmc.o: mmc_flash/mx53_mmc/src/mmc.c \
+  mmc_flash/mx53_mmc/inc/mmc.h mmc_flash/mx53_mmc/inc/list.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/part.h
+mmc_flash/mx53_mmc/src/timer.o: mmc_flash/mx53_mmc/src/timer.c \
+  ../global_inc/type.h
+mmc_flash/mx53_mmc/src/mmc.o: mmc_flash/mx53_mmc/src/mmc.c \
+  mmc_flash/mx53_mmc/inc/mmc.h mmc_flash/mx53_mmc/inc/list.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/part.h
+mmc_flash/mx53_mmc/src/mmc.o: mmc_flash/mx53_mmc/src/mmc.c \
+  mmc_flash/mx53_mmc/inc/mmc.h mmc_flash/mx53_mmc/inc/list.h \
+  ../global_inc/type.h mmc_flash/mx53_mmc/inc/part.h

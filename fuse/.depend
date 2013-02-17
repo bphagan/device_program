@@ -1,0 +1,2 @@
+unit_test/fake_fuselib.o: unit_test/fake_fuselib.c ../global_inc/debug.h \
+  ../global_inc/type.h ../global_inc/protocol.h ../global_inc/fuse_lib.h
