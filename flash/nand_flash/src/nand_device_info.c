@@ -20,6 +20,21 @@ static struct nand_device_info nand_device_info_table_type_2[] =
 {	
 	{
 	.end_of_table             = false,
+	.man_id			  = 0x20,
+	.dev_id			  = 0x76,
+	.cell_type                = NAND_DEVICE_CELL_TECH_SLC,
+	.chip_size_in_bytes       = 32LL*SZ_1M,
+	.page_size		  = 512,
+	.oob_size		  = 16,
+	.ppb      		  = 32,
+	.bbm_offset		  = 5,
+	.bbi_page_offset          = 0,
+	.bus_width		  = 8,
+	.scan_pg_num              = 1,
+	.model			  = "NAND512W3",
+	},
+	{
+	.end_of_table             = false,
 	.man_id			  = 0xec,
 	.dev_id			  = 0x75,
 	.cell_type                = NAND_DEVICE_CELL_TECH_SLC,
@@ -521,6 +536,21 @@ static struct nand_device_info nand_device_info_table_type_2[] =
  */
 static struct nand_device_info nand_device_info_table_large_mlc[] =
 {
+	{
+	.end_of_table             = false,
+	.man_id			  = 0xec,
+	.dev_id			  = 0x76,
+	.cell_type                = NAND_DEVICE_CELL_TECH_SLC,
+	.chip_size_in_bytes       = 64LL*SZ_1M,
+	.page_size		  = 512,
+	.oob_size		  = 16,
+	.ppb      		  = 32,
+	.bbm_offset		  = 5,
+	.bbi_page_offset          = 0,
+	.bus_width		  = 8,
+	.scan_pg_num              = 1,
+	.model			  = "K9F1208U0M",
+	},
 	{
 	.end_of_table             = false,
 	.man_id                   = 0x98,
