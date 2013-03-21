@@ -1602,6 +1602,12 @@ static struct nand_device_info *nand_device_info_fn_samsung(const u8 id[])
 {
 	struct nand_device_info  *table;
 
+
+	/* Check for Small Block */
+	if ((ID_GET_BYTE_3(id) == 0xc0) || (ID_GET_BYTE_3(id) == 0xbd)) {
+		table = nand_device_info_table_type_2;
+		
+	}else{
 	/* Check for an MLC device. */
 
 	if (ID_GET_CELL_TYPE_CODE(id) != ID_CELL_TYPE_CODE_SLC) {
@@ -1667,6 +1673,7 @@ static struct nand_device_info *nand_device_info_fn_samsung(const u8 id[])
 
 		}
 
+	}
 	}
 
 	return nand_device_info_search(table, ID_GET_MFR_CODE(id),

@@ -1,7 +1,6 @@
-nand_flash/src/nand_device_info.o: nand_flash/src/nand_device_info.c \
-  nand_flash/inc/nand_device_info.h ../global_inc/type.h
-.h \
+nand_flash/src/nfc_base.o: nand_flash/src/nfc_base.c \
   nand_flash/inc/nand_flash.h ../global_inc/type.h \
-  nand_flash/inc/nand_device_info.h ../global_inc/type.h
-nfc_base.h nand_flash/inc/nand_device_info.h
-l_inc/flash_lib.h
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h \
+  ../global_inc/flash_lib.h ../global_inc/protocol.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/mx25_nfc.h \
+  ../global_inc/flash_lib.h

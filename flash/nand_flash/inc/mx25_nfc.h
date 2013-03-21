@@ -294,6 +294,16 @@ void set_fms(u8 bus_width, u32 page_size,u16 oob_size)
 	
 	if(bus_width == 16)
 		*(volatile u32 *)CCM_RCSR  |=  NF_16BIT;   /* Set to 16-bit NAND */
+	if(page_size == 512){
+		/* Set to 512 Page Size */
+		*(volatile u32 *)CCM_RCSR  &= ~NF_4KB;
+		*(volatile u32 *)CCM_RCSR  &= ~NF_FMS_2KB;
+	}
+	if(page_size == 2048){
+		/* Set to 4K Page Size */
+		*(volatile u32 *)CCM_RCSR  &= ~NF_4KB;
+		*(volatile u32 *)CCM_RCSR  |= NF_FMS_2KB;
+	}
 	if(page_size == 4096){
 		/* Set to 4K Page Size */
 		*(volatile u32 *)CCM_RCSR  |= NF_4KB;

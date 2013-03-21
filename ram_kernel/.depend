@@ -3,10 +3,11 @@ src/main.o: src/main.c ../global_inc/debug.h ../global_inc/type.h \
   ../global_inc/fuse_lib.h src/platform/mx25/inc/channel.h \
   ../global_inc/type.h src/platform/mx25/inc/platform.h \
   src/platform/mx25/inc/su_basictypes.h
-form/mx25/inc/usb_ipl_tl_extern.h \
+form/mx25/inc/usb_tl_al_extern.h \
   src/platform/mx25/inc/usb_common.h \
-  src/platform/mx25/inc/usb_ipl_al_extern.h \
-  src/platform/mx25/inc/bl_transreceiver.h
-x25/inc/bl_transreceiver.h \
-  src/platform/mx25/inc/usb_common.h \
+  src/platform/mx25/inc/usb_ipl_tl_extern.h \
+  src/platform/mx25/inc/usb_tl_al_extern.h \
+  src/platform/mx25/inc/platform.h
+ \
   src/platform/mx25/inc/usb_tl_al_extern.h
+/mx25/inc/usb_tl_al_extern.h
