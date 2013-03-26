@@ -1,6 +1,41 @@
+nand_flash/src/flash_lib.o: nand_flash/src/flash_lib.c \
+  ../global_inc/type.h ../global_inc/protocol.h ../global_inc/flash_lib.h \
+  nand_flash/inc/nand_flash.h ../global_inc/type.h \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h
+nand_flash/src/nand_bbt.o: nand_flash/src/nand_bbt.c ../global_inc/type.h \
+  ../global_inc/flash_lib.h nand_flash/inc/nand_flash.h \
+  ../global_inc/type.h nand_flash/inc/nand_device_info.h \
+  ../global_inc/type.h nand_flash/inc/nfc_base.h
+nand_flash/src/nand_device_info.o: nand_flash/src/nand_device_info.c \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h
+nand_flash/src/nand_flash.o: nand_flash/src/nand_flash.c \
+  nand_flash/inc/nand_flash.h ../global_inc/type.h \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h \
+  ../global_inc/protocol.h ../global_inc/flash_lib.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/nand_device_info.h
 nand_flash/src/nfc_base.o: nand_flash/src/nfc_base.c \
   nand_flash/inc/nand_flash.h ../global_inc/type.h \
   nand_flash/inc/nand_device_info.h ../global_inc/type.h \
   ../global_inc/flash_lib.h ../global_inc/protocol.h \
-  nand_flash/inc/nfc_base.h nand_flash/inc/mx25_nfc.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/mx53_nfc.h \
+  ../global_inc/flash_lib.h
+nand_flash/src/nand_device_info.o: nand_flash/src/nand_device_info.c \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h
+nand_flash/src/nfc_base.o: nand_flash/src/nfc_base.c \
+  nand_flash/inc/nand_flash.h ../global_inc/type.h \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h \
+  ../global_inc/flash_lib.h ../global_inc/protocol.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/mx53_nfc.h \
+  ../global_inc/flash_lib.h
+nand_flash/src/nfc_base.o: nand_flash/src/nfc_base.c \
+  nand_flash/inc/nand_flash.h ../global_inc/type.h \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h \
+  ../global_inc/flash_lib.h ../global_inc/protocol.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/mx53_nfc.h \
+  ../global_inc/flash_lib.h
+nand_flash/src/nfc_base.o: nand_flash/src/nfc_base.c \
+  nand_flash/inc/nand_flash.h ../global_inc/type.h \
+  nand_flash/inc/nand_device_info.h ../global_inc/type.h \
+  ../global_inc/flash_lib.h ../global_inc/protocol.h \
+  nand_flash/inc/nfc_base.h nand_flash/inc/mx53_nfc.h \
   ../global_inc/flash_lib.h

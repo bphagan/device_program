@@ -28,6 +28,8 @@
 #endif
 #elif defined(MCU_MX35)
 #include "mx35_nfc.h"
+#elif defined(MCU_MX53)
+#include "mx53_nfc.h"
 #elif defined(MCU_MX37)
 #include "mx37_nfc.h"
 #elif defined(MCU_MX31) || defined(MCU_MX32)

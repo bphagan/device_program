@@ -1,13 +1,61 @@
+src/platform/mx53/src/bl_transreceiver.o:  \
+ src/platform/mx53/src/bl_transreceiver.c src/platform/mx53/inc/suapi.h \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/bl_transreceiver.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/usb_ipl_al_extern.h \
+  src/platform/mx53/inc/usb_hwinterface_layer.h \
+  src/platform/mx53/inc/usb_transaction_layer.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h
+src/platform/mx53/src/channel.o: src/platform/mx53/src/channel.c \
+  src/platform/mx53/inc/channel.h ../global_inc/type.h \
+  src/platform/mx53/inc/platform.h src/platform/mx53/inc/su_basictypes.h \
+  ../global_inc/protocol.h ../global_inc/debug.h \
+  src/platform/mx53/inc/usb_hwinterface_layer.h \
+  src/platform/mx53/inc/usb_tl_pl_extern.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/serial_downloader.h \
+  src/platform/mx53/inc/bl_transreceiver.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h
+src/platform/mx53/src/platform.o: src/platform/mx53/src/platform.c \
+  ../global_inc/type.h src/platform/mx53/inc/platform.h \
+  src/platform/mx53/inc/su_basictypes.h src/platform/mx53/inc/sys_mmu.h
+src/platform/mx53/src/serial_downloader.o:  \
+ src/platform/mx53/src/serial_downloader.c \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_ipl_al_extern.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/serial_downloader.h \
+  src/platform/mx53/inc/bl_transreceiver.h \
+  src/platform/mx53/inc/usb_transaction_layer.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h
+src/platform/mx53/src/usb_hwinterface_layer.o:  \
+ src/platform/mx53/src/usb_hwinterface_layer.c \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_hwinterface_layer.h \
+  src/platform/mx53/inc/usb_ipl_tl_extern.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/usb_ipl_al_extern.h
+src/platform/mx53/src/usb_transaction_layer.o:  \
+ src/platform/mx53/src/usb_transaction_layer.c \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/su_basictypes.h \
+  src/platform/mx53/inc/usb_transaction_layer.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h \
+  src/platform/mx53/inc/usb_common.h \
+  src/platform/mx53/inc/usb_ipl_tl_extern.h \
+  src/platform/mx53/inc/usb_tl_al_extern.h \
+  src/platform/mx53/inc/platform.h
 src/main.o: src/main.c ../global_inc/debug.h ../global_inc/type.h \
   ../global_inc/protocol.h ../global_inc/flash_lib.h \
-  ../global_inc/fuse_lib.h src/platform/mx25/inc/channel.h \
-  ../global_inc/type.h src/platform/mx25/inc/platform.h \
-  src/platform/mx25/inc/su_basictypes.h
-form/mx25/inc/usb_tl_al_extern.h \
-  src/platform/mx25/inc/usb_common.h \
-  src/platform/mx25/inc/usb_ipl_tl_extern.h \
-  src/platform/mx25/inc/usb_tl_al_extern.h \
-  src/platform/mx25/inc/platform.h
- \
-  src/platform/mx25/inc/usb_tl_al_extern.h
-/mx25/inc/usb_tl_al_extern.h
+  ../global_inc/fuse_lib.h src/platform/mx53/inc/channel.h \
+  ../global_inc/type.h src/platform/mx53/inc/platform.h \
+  src/platform/mx53/inc/su_basictypes.h

@@ -20,6 +20,23 @@ static struct nand_device_info nand_device_info_table_type_2[] =
 {	
 	{
 	.end_of_table             = false,
+	.man_id                   = 0x2c,
+	.dev_id                   = 0x68,
+	.cell_type                = NAND_DEVICE_CELL_TECH_SLC,
+	.chip_size_in_bytes       = 4LL*SZ_1G,
+	.ppb                      = 128,
+	.page_size		  = 8*SZ_1K,
+	.oob_size		  = 448,
+	.bbm_offset		  = 0,
+	.bbi_page_offset          = 0,
+	.bus_width		  = 8,
+	.scan_pg_num              = 1,
+	.model			  = 
+	"MT29F32G08ABAAA (4GB, 1CE); "
+	"MT29F64G08AFAAA (8GB, 2CE); "
+	},
+	{
+	.end_of_table             = false,
 	.man_id			  = 0x20,
 	.dev_id			  = 0x76,
 	.cell_type                = NAND_DEVICE_CELL_TECH_SLC,
